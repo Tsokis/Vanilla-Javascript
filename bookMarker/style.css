@@ -1,0 +1,22 @@
+h1 {
+    color: blueviolet;
+    font-size: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container>p {
+    font-size: 2rem;
+    border-style: outset;
+    border-width: 5px;
+}
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+footer>p {
+    padding-top: 15px;
+}
