@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>DOM JS App</title>
+    <style>
+        h5 {
+            margin-top: 0.5rem;
+            padding-bottom: 10px;
+            border: 5px solid black;
+            border-radius: 8px;
+            text-shadow: 1.5px 1.5px;
+        }
+
+        h5:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header" class="bg-dark text-white p-4 mb-3">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="header-title">List Item App
+                        <span style="display:none"></span>
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="filter" placeholder="Search Items...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title">Add Items</h2>
+            <form class="form-inline mb-3" id="addForm">
+                <input type="text" class="form-control mr-2" id="item">
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+            <h2 class="title">Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Static Item 1
+                    <button class="btn btn-danger btn-sm float-right">X</button>
+                </li>
+                <li class="list-group-item"> Static Item 2
+                    <button class="btn btn-danger btn-sm float-right">X</button>
+                </li>
+            </ul>
+            <br>
+            <button class="btn btn-dark btn-block" id="button">Click Here</button>
+            <div class="text-dark" id="changeBgColor">
+                <h5 class="text-center">
+                    <em>rgb background color change</em>
+                </h5>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--Bootstrap Grid-->
+                <div class="col-md-4">
+                    <div id="output">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="output1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="output2">
+                    </div>
+                </div>
+            </div>
+            <!--Bootstrap Grid End-->
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
