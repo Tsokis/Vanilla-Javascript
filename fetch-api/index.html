@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 mb-4">Fetch some Api</h1>
+        <div class="d-flex">
+            <button class="btn btn-primary mr-3" id="getText">Get Text</button>
+            <button class="btn btn-success mr-3" id="getUsers">Get JSON</button>
+            <button class="btn btn-secondary mr-3" id="getPosts">Get Api Data</button>
+        </div>
+        <hr>
+        <div id="output" class="mb-5"></div>
+
+        <form id="addPost" class="mt-5">
+
+            <div class="form-group">
+                <input type="text" id="title" placeholder="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <textarea id="body" placeholder="body" class="form-control"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-secondary">
+
+        </form>
+    </div>
+
+    <!--
+    
+    <button>Submit</button> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
