@@ -9,3 +9,5 @@ Second project is a simple app that allows the user to add,delete and filter ite
 AJAX file contains examples of ajax calls,methods and one example with external api such as github's api.
 #
 Fetch() api contains examples of the fetch api method
+#
+Search reddit via reddit api using vanilla-javascript and display the output of the request on the html page sorted by some options(5,10..100|search-results and ui with bootstrap-4)  
