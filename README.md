@@ -11,3 +11,7 @@ AJAX file contains examples of ajax calls,methods and one example with external 
 Fetch() api contains examples of the fetch api method
 #
 Search reddit via reddit api using vanilla-javascript and display the output of the request on the html page sorted by some options(5,10..100|search-results and ui with bootstrap-4)  
+#
+Javascript modal
+#
+Random project: generated html elements and css classes through javascript
