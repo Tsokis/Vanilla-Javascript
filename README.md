@@ -1,5 +1,6 @@
-# Vanilla-Javascript
-Simple projects with pure javascript mostly focused on DOM manipulation.
+# Vanilla-Javascript 
+Projects with pure javascript mostly focused on DOM,AJAX manipulation.  
+Feel free to contribute anything you want related to vanilla javascript or improve an existing project.
 #
 BookMarker is a bookmark application which saves the user input such as Site's Name and Site's Url on Local Storage
 and displays it back, on the html page.
