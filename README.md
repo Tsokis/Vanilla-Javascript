@@ -20,3 +20,6 @@ Random project: generated html elements and css classes through javascript
 Full-image-slider: full page image slider 
 #
 ClassExamples: Examples of javascript classes  
+#
+AlgorithmsJs: Algorithms displayed as User Interface with an auto-image slider and some simple animations.  
+Still in work,current algorithms:1)reverse a string and 2)check if a string is palindrome
