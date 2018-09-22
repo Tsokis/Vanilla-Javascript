@@ -18,3 +18,5 @@ Javascript modal
 Random project: generated html elements and css classes through javascript
 #
 Full-image-slider: full page image slider 
+#
+ClassExamples: Examples of javascript classes  
