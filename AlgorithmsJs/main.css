@@ -1,0 +1,186 @@
+/* I'am working on 24inches Screen, so when i'am on that pc i always approach mobile/(large due to my screen) first and then medium 
+   When i'am working on laptop mobile/medium first*/
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #E5E5E5;
+    
+}
+/* nav Bar */
+
+.navBar {
+    margin-top: 0px;
+    width: 100%;
+    height: 35px;
+}
+
+.navBar>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navBar>ul>li {
+    float: left;
+    margin-left: 1rem;
+}
+
+.navBar>ul>li>a {
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* end navBar */
+
+/* main body */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+.containerImg {
+    text-align: center;
+}
+
+.container {
+    padding: 65px 65px 65px 65px;
+    text-align: center;
+}
+
+/* testing the border and button right now on medium and large screens looks awful */
+.styleOutput {
+    margin-left: 600px;
+    width: 30%;
+    padding: 35px 5px 15px 5px;
+     border-bottom: 5px solid black;
+    border-radius: 25px;
+}
+
+.container>button {
+    padding: 20px 20px 20px 20px;
+    background-color: blue;
+    width: 5%;
+    border-radius: 14px;
+    font-size: 14px;
+    color: white;
+    margin-left: 1rem;
+}
+
+.container button:hover {
+    background-color: black;
+    color: green
+}
+
+button {
+    background-color: lightblue;
+    margin-top: 2.1rem;
+    margin-left: 17px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.testclass {
+    font-size: 3rem;
+}
+
+/* animation css */
+#chain,
+#battery,
+#hourglass {
+    font-size: 3rem;
+}
+
+.container input {
+    font-size: 2rem;
+    border: 4px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 5px;
+    margin: auto;
+}
+/* test */
+.mt {
+    margin-top: 1rem;;
+}
+
+/* appended with js */
+.note {
+    color: #323232;
+}
+
+.test {
+    color: green;
+    font-size: 2.5rem;
+}
+
+.test2 {
+    font-size: 1rem;
+    border: 100px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.8)
+}
+
+/* footer */
+.footer {
+    background-color: grey;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+/* need also medium and large size fix media query */
+
+/* mobile screens */
+@media only screen and (max-width: 542px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .styleOutput {
+        margin-left: 30px;
+        width: 70%;
+    
+    }
+
+    button {
+        padding: 15px 15px 15px 15px;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #button {
+        padding: 15px 15px 15px 15px;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-left: 5px;
+    }
+
+    .container input {
+        font-size: 1.5rem;
+        border: 2px solid black;
+        padding: 10px;
+        box-shadow: 10px 10px 5px;
+    }
+}
