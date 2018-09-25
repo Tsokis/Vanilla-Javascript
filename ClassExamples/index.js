@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 
 class Employee {
     constructor(firstName, lastName, address, email){
@@ -12,13 +12,11 @@ class Employee {
     
    info(){
        const output = document.getElementById('test');
-     //const className= document.querySelector('.card');
      output.setAttribute('class','card');
      output.innerHTML += `<p>Employee ${this.firstName}                         
                         with last name ${this.lastName}
                         has this  <em>${this.address}</em> address
-                        and this <b>${this.email}</b> email address.</p><br>`;
-    output.setAttribute('class','card');
+                        and this <b>${this.email}</b> email address.</p><br>`;    
 
    };
 
