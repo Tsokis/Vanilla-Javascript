@@ -1,0 +1,182 @@
+/* This Layout is a product of pure testing
+    When i started the project i didn't have something specific in my mind so i maybe change it from scratch again */
+
+body {
+    margin: 0;
+    padding: 0;
+} 
+
+/* class for auto marging */
+.mb {
+    margin-bottom: 2rem;
+}
+
+/* Testing css Grid layout */
+.analytics { grid-area: header; }
+
+.interface { grid-area: menu; }
+
+.output1 { grid-area: main; }
+
+.output2 { grid-area: right; }
+
+.fouteria { grid-area: footer; }
+
+.wrapper { 
+    display: grid;
+    grid-template-areas: 
+    'menu menu menu header header header'    
+    'menu menu menu main right right'    
+    'menu menu menu main right right'
+    'footer footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: lightgray;
+    padding: 5px;
+    height: 100vh;
+
+}
+
+.wrapper > div {
+    text-align: center;
+    /* probably i should lower the font-size and fix it again because it causes error on other elements as well */
+    font-size: 2rem;
+}
+
+/* analytics display */
+.analytics {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* INCOME */
+.output1 {    
+    color: green;
+    margin-bottom: 17rem;
+}
+
+/* EXPENSE */
+.output2 {
+    color: darkolivegreen;
+    padding-left: 20px;
+}
+
+/* test */
+.fouteria {
+    background-color: cadetblue;
+}
+
+/* interface menu */
+.interface {
+    padding-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: blueviolet;
+    color: white;
+}
+
+.add-description {
+    margin-left: 23px;
+}
+/* interface button */
+
+.btn-test {
+ color: #fff !important;
+text-transform: uppercase;
+background: green;
+padding: 20px;
+border-radius: 5px;
+display: inline-block;
+border: none;
+margin-bottom: 1rem;
+
+}
+
+.btn-test:hover {
+ background: #434343;
+ letter-spacing: 1px;
+ -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+ -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+ box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+ transition: all 0.4s ease 0s;
+ }
+/* interface button end */
+
+.add-type {
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 1.4rem;
+}
+
+.add-type:hover{
+    font-size: 1.5rem;
+    background-color: #003300;
+    letter-spacing: 1px;
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition:  ease-out 1s;    
+}
+
+.add-value {
+    margin-left: 2px;
+}
+/* fixing minus icon */
+.fa-minus-square {
+    margin-left: 17px;
+}
+/* input forms */
+input {
+    padding: 12px 20px;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+/* interface end */
+
+/* testing responsiveness  */
+@media screen and (max-width: 560px) {
+    
+
+    .wrapper {
+        
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        font-size: 10px;
+    }
+
+    .analytics {
+        /*testing */
+        margin: 10px;
+        color: black;
+    }
+
+    .interface {
+        font-size: 12px !important;
+    }
+    .add-description{
+        margin-left: 0;
+    }
+
+    input {
+        padding: auto;
+        width: 70%;
+        margin-bottom: 1rem;
+        padding: 10px;
+    }
+
+    /* INCOME */
+.output1 {    
+    color: green;
+    margin-bottom: 7rem;
+}
+
+/* EXPENSE */
+.output2 {
+    color: rgb(47, 107, 60);
+    
+}
+
+.fa-minus-square{
+    margin-left: 6px;
+}
+
+}
