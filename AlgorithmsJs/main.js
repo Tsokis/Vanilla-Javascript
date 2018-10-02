@@ -1,11 +1,3 @@
-
-// -------------TEST------------- 
-/*let arrayB = ['john', 'nik', 'kiss'];
-let op = '';
-for (i = 0; i < arrayB.length; i++) {
-    op = arrayB;
-
-} */
 //Another way to pass css class through javascript
 //document.getElementById("myDIV").className = "mystyle";
 
@@ -94,7 +86,7 @@ function checkIfPalindrome() {
 function changeBackground() {
     
     document.getElementById("changeBackGroundColor").style.backgroundColor =
-        "lightgrey";
+        "violet";
 }
 //-----------------------------------------------------------------------------------------
 
