@@ -111,7 +111,7 @@ function brakeChain() {
     let chain = document.getElementById('chain');
     chain.innerHTML = "&#xf0c1";
 
-    setTimeout(function () {
+    setTimeout( () => {
         chain.innerHTML = '&#xf127';
     }, 1000);
 }
@@ -125,16 +125,16 @@ setInterval(brakeChain, 2000);
 function chargeBattery() {
     let battery = document.getElementById('battery');
     battery.innerHTML = "&#xf244";
-    setTimeout(function () {
+    setTimeout( () => {
         battery.innerHTML = "&#xf243";
     }, 1000);
-    setTimeout(function () {
+    setTimeout( () => {
         battery.innerHTML = "&#xf242";
     }, 2000);
-    setTimeout(function () {
+    setTimeout( () => {
         battery.innerHTML = "&#xf241";
     }, 3000);
-    setTimeout(function () {
+    setTimeout( () => {
         battery.innerHTML = "&#xf240";
     }, 4000);
 }
@@ -150,10 +150,10 @@ setInterval(chargeBattery, 5000);
 function hourglass() {
     let hourglass = document.getElementById('hourglass');
     hourglass.innerHTML = '&#xf251';
-    setTimeout(function () {
+    setTimeout( () => {
         hourglass.innerHTML = '&#xf252';
     }, 1000);
-    setTimeout(function () {
+    setTimeout( () => {
         hourglass.innerHTML = '&#xf253';
     }, 2000);
 }
