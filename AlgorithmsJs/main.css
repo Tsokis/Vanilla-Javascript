@@ -154,9 +154,30 @@ h5 {
 
     .styleOutput {
         margin-left: 350px;
-        width: 50%;
+        width: 50%;    
+    }
+} 
+
+@media  screen and (max-width: 1000px) {
+
+    .styleOutput {
+        margin-left: 140px;
+        width: 60%;
     
     }
+
+    .container>button {
+        padding: 30px 35px 30px 25px;
+        background-color: blue;       
+        width: 15%;
+        border-radius: 14px;
+        font-size: 12px;
+        color: white;
+        
+    }
+    
+
+
 
 } 
 
@@ -187,7 +208,7 @@ h5 {
     }
 
     .container input {
-        font-size: 1.5rem;
+        font-size: 1rem;
         border: 2px solid black;
         padding: 10px;
         box-shadow: 10px 10px 5px;
