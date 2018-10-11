@@ -22,9 +22,9 @@ fetch(proxieUrl + targetUrl)
                             <ul class="ulStyle">
                               <li>For City: <strong>${data.title}</strong></li>
                               <li>Country: <em>${parent.title}</em> </li>
-                              <li>Weather is <em>${today.weather_state_name}</em></li>
-                               </li>Min Temp: ${today.min_temp}</li>
-                               <li>Max Temp: ${today.max_temp}</li>                               
+                              <li>Weather is <strong>${today.weather_state_name}</strong></li>
+                               </li>Min Temp: <strong>${today.min_temp}</strong> Celsius</li>
+                               <li>Max Temp: <strong>${today.max_temp}</strong> Celsius</li>                               
                             <ul>
                             `    
 })
