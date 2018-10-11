@@ -1,0 +1,19 @@
+.Weather {  
+    text-align: center;    
+    background-color: #DDD6BD;
+    margin-top: 1rem;
+    margin-left: 0px;
+}
+
+.ulStyle {    
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+h1 {
+    margin-left: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Playfair Display',
+    serif;
+}
