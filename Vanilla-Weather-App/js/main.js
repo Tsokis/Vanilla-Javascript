@@ -18,11 +18,11 @@ fetch(proxieUrl + targetUrl)
     //test
     console.log(`City: ${data.title} Country:  ${parent.title} with min temperature ${today.min_temp} and max temperature ${today.max_temp} Celsius , Weather is ${today.weather_state_name}`);
     
-    weatherHtml.innerHTML += `<h1>Weather Today</h1>
-                            <ul>
-                              <li>For City: ${data.title}</li>
-                              <li>Country: ${parent.title} </li>
-                              <li>Weather is ${today.weather_state_name}</li>
+    weatherHtml.innerHTML += `
+                            <ul class="ulStyle">
+                              <li>For City: <strong>${data.title}</strong></li>
+                              <li>Country: <em>${parent.title}</em> </li>
+                              <li>Weather is <em>${today.weather_state_name}</em></li>
                                </li>Min Temp: ${today.min_temp}</li>
                                <li>Max Temp: ${today.max_temp}</li>                               
                             <ul>
