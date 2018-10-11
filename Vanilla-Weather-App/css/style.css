@@ -1,8 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+nav{
+    margin-top: 0px;
+    width: 100%;
+    height: 35px;
+}
+
+nav > ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 14px;
+     overflow: hidden;
+     background-color: #333;
+    
+} 
+nav>ul>li {
+    float: left;
+    margin-left: 1rem;
+}
+
+nav >ul>li>a {
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active a:hover {
+    background-color: #4CAF50;      
+}
+
+.mt {
+    margin-top:1.3rem;
+}
+
+.container {
+    margin-left:350px; 
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
 .Weather {  
     text-align: center;    
     background-color: #DDD6BD;
     margin-top: 1rem;
-    margin-left: 0px;
+    margin-left: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
+    font-family: 'EB Garamond',
+    serif;
+}
+.Weather:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
 }
 
 .ulStyle {    
@@ -11,6 +63,7 @@
 }
 
 h1 {
+    margin-top: 50px;
     margin-left: 5px;
     font-size: 1.3rem;
     text-align: center;
