@@ -35,5 +35,9 @@ getWeather(44418);
 
 setTimeout(() => {    
      getWeather(946738);
-},2000)
+},3500)
 //getWeather(946738)
+
+setTimeout(() => {
+    getWeather(30079);
+},4100)
