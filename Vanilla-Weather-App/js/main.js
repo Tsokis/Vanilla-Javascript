@@ -34,7 +34,7 @@ fetch(proxieUrl + targetUrl)
                                <li>Todays Minimum Temperature expected to be<br> <strong>${today.min_temp}</strong> Celsius</li>
                                <li>Todays Maximum Temperature expected to be<br> <strong>${today.max_temp}</strong> Celsius</li>
                             </ul>
-                            <ul>
+                            <ul class="ulStyle">
                                 <h3>4 days forecast</h3>
                                 <li>${after2Days.weather_state_name}</li>
                                 <li>${after3Days.weather_state_name}</li>
