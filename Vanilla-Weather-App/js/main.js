@@ -2,7 +2,7 @@ function getWeather(woeid) {
 const targetUrl = `https://www.metaweather.com/api/location/${woeid}/`;
 const proxieUrl = 'https://cors-anywhere.herokuapp.com/';
 const weatherHtml = document.querySelector('.Weather');
-
+weatherHtml.style.display = 'none';
 
 
 fetch(proxieUrl + targetUrl)
@@ -20,11 +20,11 @@ fetch(proxieUrl + targetUrl)
     const after4Days = data.consolidated_weather[4];
     const after5Days = data.consolidated_weather[5];
     const parent = data.parent;
-    let d = new Date();
+    let d = new Date(); 
     dd = d.toDateString();    
     //test
     console.log(`City: ${data.title} Country:  ${parent.title} with min temperature ${today.min_temp} and max temperature ${today.max_temp} Celsius , Weather is ${today.weather_state_name}`);
-    
+    weatherHtml.style.display = 'block';
     weatherHtml.innerHTML += `
                             <ul class="ulStyle">
                               <li><strong>${data.title}</strong></li>
@@ -41,7 +41,6 @@ fetch(proxieUrl + targetUrl)
                                 <li>${after4Days.weather_state_name}</li>
                                 <li>${after5Days.weather_state_name}</li>
                             </ul>
-
                             `    
 })
 .catch(error => console.log(error));
