@@ -2,6 +2,7 @@ function getWeather(woeid) {
 const targetUrl = `https://www.metaweather.com/api/location/${woeid}/`;
 const proxieUrl = 'https://cors-anywhere.herokuapp.com/';
 const weatherHtml = document.querySelector('.Weather');
+const forecast = document.querySelector('.Forecast');
 weatherHtml.style.display = 'none';
 
 
@@ -20,6 +21,7 @@ fetch(proxieUrl + targetUrl)
     const after4Days = data.consolidated_weather[4];
     const after5Days = data.consolidated_weather[5];
     const parent = data.parent;
+    
     let d = new Date(); 
     dd = d.toDateString();    
     //test
@@ -33,15 +35,19 @@ fetch(proxieUrl + targetUrl)
                               <li>Weather tomorrow will be: <strong>${nextDay.weather_state_name}</strong></li>
                                <li>Todays Minimum Temperature expected to be<br> <strong>${today.min_temp}</strong> Celsius</li>
                                <li>Todays Maximum Temperature expected to be<br> <strong>${today.max_temp}</strong> Celsius</li>
-                            </ul>
-                            <ul class="ulStyle">
+                            </ul> `
+
+     
+    let respondForecast = `<ul class="ulStyle">
                                 <h3>4 days forecast</h3>
+                                <h5>${data.title}</h5>
                                 <li>${after2Days.weather_state_name}</li>
                                 <li>${after3Days.weather_state_name}</li>
                                 <li>${after4Days.weather_state_name}</li>
                                 <li>${after5Days.weather_state_name}</li>
                             </ul>
                             `    
+    forecast.innerHTML += respondForecast;
 })
 .catch(error => console.log(error));
 }
