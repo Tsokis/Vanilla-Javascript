@@ -4,6 +4,7 @@ const proxieUrl = 'https://cors-anywhere.herokuapp.com/';
 const weatherHtml = document.querySelector('.Weather');
 const forecast = document.querySelector('.Forecast');
 weatherHtml.style.display = 'none';
+forecast.style.display = 'none';
 
 
 fetch(proxieUrl + targetUrl)
@@ -37,10 +38,10 @@ fetch(proxieUrl + targetUrl)
                                <li>Todays Maximum Temperature expected to be<br> <strong>${today.max_temp}</strong> Celsius</li>
                             </ul> `
 
-     
+    forecast.style.display = 'block';
     let respondForecast = `<ul class="ulStyle">
-                                <h3>4 days forecast</h3>
-                                <h5>${data.title}</h5>
+                                <h3><strong>4 days forecast</strong></h3>
+                                <h4><em>${data.title}</em></h4>
                                 <li>${after2Days.weather_state_name}</li>
                                 <li>${after3Days.weather_state_name}</li>
                                 <li>${after4Days.weather_state_name}</li>
