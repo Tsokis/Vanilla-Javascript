@@ -52,17 +52,22 @@ fetch(proxieUrl + targetUrl)
 })
 .catch(error => console.log(error));
 }
-//London Weather
-getWeather(44418);
-
-
-setTimeout(() => {    
-    //Athens Weather
-     getWeather(946738);
-},3500)
-//getWeather(946738)
 
 setTimeout(() => {
-    //Newcastele Weather
-    getWeather(30079);
-},4100)
+    //London Weather
+    getWeather(44418);
+    setTimeout(() => {
+        //Athens Weather
+        getWeather(946738);
+    }, 3500)
+    setTimeout(() => {
+        //Newcastle Weather
+        getWeather(30079);
+    }, 4100)
+},1)
+
+
+
+
+
+
