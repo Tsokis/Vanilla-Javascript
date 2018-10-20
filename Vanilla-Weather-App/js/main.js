@@ -28,15 +28,15 @@ fetch(proxieUrl + targetUrl)
     //test
     console.log(`City: ${data.title} Country:  ${parent.title} with min temperature ${today.min_temp} and max temperature ${today.max_temp} Celsius , Weather is ${today.weather_state_name}`);
     weatherHtml.style.display = 'block';
-    weatherHtml.innerHTML += `
-                            <ul class="ulStyle">
+    let weatherFetch = `<ul class="ulStyle">
                               <li><strong>${data.title}</strong></li>
                               <li>Country: <em>${parent.title}</em> </li>
                               <li>Today ${dd} the weather is <strong>${today.weather_state_name}</strong></li>
                               <li>Weather tomorrow will be: <strong>${nextDay.weather_state_name}</strong></li>
                                <li>Todays Minimum Temperature expected to be<br> <strong>${today.min_temp}</strong> Celsius</li>
                                <li>Todays Maximum Temperature expected to be<br> <strong>${today.max_temp}</strong> Celsius</li>
-                            </ul> `
+                            </ul> `;
+    weatherHtml.innerHTML += weatherFetch;
 
     forecast.style.display = 'block';
     let respondForecast = `<ul class="ulStyle">
@@ -47,7 +47,7 @@ fetch(proxieUrl + targetUrl)
                                 <li>${after4Days.weather_state_name}</li>
                                 <li>${after5Days.weather_state_name}</li>
                             </ul>
-                            `    
+                            `;    
     forecast.innerHTML += respondForecast;
 })
 .catch(error => console.log(error));
@@ -64,7 +64,7 @@ setTimeout(() => {
         //Newcastle Weather
         getWeather(30079);
     }, 4100)
-},1)
+},1000)
 
 
 
