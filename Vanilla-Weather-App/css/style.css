@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+/* default responsiveness screen 24inch */
+
+/* navigation style */
 nav{
     margin-top: 0px;
     width: 100%;
@@ -31,10 +34,12 @@ nav >ul>li>a {
     background-color: #4CAF50;      
 }
 
+/* test for auto margin like bootstrap framework */
 .mt {
     margin-top:1.3rem;
 }
 
+/* main content style */
 .container {
     margin-left:350px; 
     margin-right: 150px;
@@ -83,7 +88,9 @@ h1 {
     serif;
 }
 
+/* MEDIA QUERIES */
 
+/* test on large screens */
 @media screen and (max-width: 1560px) {
     
     .container {
@@ -99,5 +106,57 @@ h1 {
         top: 200px;
         left: 50px
     }
+
+}
+/* test on larger mobile screens */
+@media screen and (max-width: 560px) {
+
+    .container {
+        margin-left: 20px;
+
+    }
+
+    .Weather {
+        font-size: 14px;
+        position: relative;
+        margin-left: 190px;
+        padding: 1px;
+    }
+
+    .Forecast {
+        font-size: 10px;
+        top: 195px;
+        left: 25px
+    }
+    .ulStyle {        
+        margin-right: 1rem;
+        padding: 25px;
+    }
+
+}
+/* test on sm mobile screens */
+@media screen and (max-width: 250px) {
+    h1 {
+        margin-top: 70px;
+        margin-left: 5px;
+        font-size: 12px;        
+    }    
+
+    .Weather {
+        margin-top: 46px;
+        font-size: 10px;
+        position: relative;
+        margin-left: 120px;
+        padding: 0%;
+    }
+
+    .Forecast {
+        padding: 0%;
+        font-size: 10px;
+        top: 210px;
+        left: 5px
+    }
+
+    
 
 }
