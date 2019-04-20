@@ -1,0 +1,144 @@
+/*Reset browser default margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color:  #950103;
+}
+li{
+    display:inline-block;
+}
+/* Application style container */
+.container{
+    margin: 3rem;
+}
+.welcome{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;;
+    color: white;
+}
+.searchBar{
+    text-align: center;
+}
+
+.search{
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 40%;
+}
+.search::placeholder{
+    text-align: center;
+}
+/* button */
+.btn{
+    margin-left: 0.3rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 5%;
+}
+.output{
+    text-align: center;
+}
+.details{
+    cursor: pointer;
+    color:white;
+    margin-top: 0.1rem;
+}
+/* ul element */
+.dataList{
+    list-style-type: none;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: center;
+}
+/* image from api */
+.gImage{
+    margin-top: 0.2rem;
+    width: 80%;
+}
+/* card styles*/
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+/* message div */
+.message{
+    display: none;
+    background-color: green;
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    left:530px;
+    color: white;
+    width: 20%;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 3s;
+    animation: message 1.5s ease-in-out;
+    animation-duration: 1.5s;
+}
+
+@keyframes message {
+    10%,90%{transform: translate3d(-1px,0,0);}
+    20%,80%{transform: translate3d(2px,0,0);}
+    30%,50%,70%{transform: translate3d(-4px,0,0)}
+    40%,60%{transform: translate3d(4px,0,0)}
+}
+/* details html tag element */
+details summary::-webkit-details-marker {
+    background: red;
+    color: #fff;
+    font-size: 500%;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary:after {
+    background: green;
+    border-radius: 5px;
+    content: "+";
+    color: #fff;
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: -5px 10px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+}
+details[open] summary:after {
+    content: "-";
+}
+
+/* responsiveness on mobile devices */
+@media screen and (max-width: 650px) {
+    .message{
+        top: 200px;
+        left:130px;
+    }
+    .dataList{
+        grid-template-columns: repeat(2, 100px);
+    }
+    .container{
+        margin: 1.5rem;
+    }
+
+    .search{
+        width: 70%;
+    }
+    .btn{
+        width: 50%;
+    }
+
+}
